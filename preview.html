@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Abdullah | Structural Engineer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter (Sans) and JetBrains Mono (Monospace) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        /* Hide scrollbar for clean modals */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- FIXED NAVBAR -->
+    <nav class="fixed w-full z-40 top-0 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div>
+                <a href="#" class="text-white font-bold tracking-wide">MUHAMMAD ABDULLAH</a>
+                <span class="text-slate-500 text-sm hidden md:inline ml-2">| Structural Engineer</span>
+            </div>
+            <div class="flex items-center space-x-6 text-sm font-semibold">
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+                <a href="resume.pdf" target="_blank" class="border border-slate-600 hover:border-slate-300 hover:text-white text-slate-300 px-4 py-2 rounded transition-colors">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="max-w-6xl mx-auto px-6 pt-32 pb-20 flex flex-col justify-center min-h-[60vh]">
+        <p class="text-blue-500 font-mono mb-4">Master of Science in Civil Engineering</p>
+        <h1 class="text-5xl md:text-6xl font-bold text-white leading-tight mb-6 max-w-3xl">
+            Structural Engineer specializing in computational analysis, dynamics, and building design.
+        </h1>
+        <p class="text-lg text-slate-400 max-w-2xl mb-10 leading-relaxed">
+            Bridging heavy civil construction and advanced structural mechanics. Experienced in bridging parametric design workflows with real-world site execution and finite element modeling.
+        </p>
+        <div class="flex space-x-4">
+            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition-colors">
+                View Work ↓
+            </a>
+            <a href="resume.pdf" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 px-6 rounded transition-colors">
+                Download Resume (PDF)
+            </a>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECTS (4-CARD GRID) -->
+    <section id="projects" class="bg-slate-950 py-20 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project 1: Thesis -->
+                <div class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden hover:border-slate-600 transition-colors cursor-pointer" onclick="openModal('modal-1')">
+                    <!-- Placeholder 16:9 Image -->
+                    <div class="aspect-video bg-slate-800 relative flex items-center justify-center">
+                        <span class="text-slate-600 font-mono text-sm">[ MATLAB Surface Plot / Graphic Here ]</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-mono text-blue-400 mb-2">COMPUTATIONAL FEA & RELIABILITY</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Stochastic Topology Optimization & System Reliability</h3>
+                        <p class="text-sm text-slate-400 mb-4">M.S. Thesis evaluating structural system outcrossing rates under random vibrations using computational algorithms.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Lifecycle -->
+                <div class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden hover:border-slate-600 transition-colors cursor-pointer" onclick="openModal('modal-2')">
+                    <div class="aspect-video bg-slate-800 relative flex items-center justify-center">
+                        <span class="text-slate-600 font-mono text-sm">[ Reliability Curve Plot Here ]</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-mono text-blue-400 mb-2">RISK ANALYSIS</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Reliability-Based Lifecycle Decision Analysis</h3>
+                        <p class="text-sm text-slate-400 mb-4">Decision and risk frameworks for infrastructure maintenance and lifespan optimization under uncertainty.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Python Frame Builder -->
+                <div class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden hover:border-slate-600 transition-colors cursor-pointer" onclick="openModal('modal-3')">
+                    <div class="aspect-video bg-slate-800 relative flex items-center justify-center">
+                        <span class="text-slate-600 font-mono text-sm">[ UI / Output of Frame Builder Here ]</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-mono text-blue-400 mb-2">SOFTWARE TOOL</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Computational Python Frame Builder</h3>
+                        <p class="text-sm text-slate-400 mb-4">Custom 2D FEA solver and parametric frame builder developed entirely in Python for direct structural analysis.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: BIM & Parametric -->
+                <div class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden hover:border-slate-600 transition-colors cursor-pointer" onclick="openModal('modal-4')">
+                    <div class="aspect-video bg-slate-800 relative flex items-center justify-center">
+                        <span class="text-slate-600 font-mono text-sm">[ Tekla / Grasshopper Render Here ]</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-mono text-blue-400 mb-2">COMPUTATIONAL DESIGN & DETAILING</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Parametric Engineering & BIM Workflows</h3>
+                        <p class="text-sm text-slate-400 mb-4">Bridging complex geometric generation via Grasshopper with structural detailing in Tekla and Revit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL TOOLKIT -->
+    <section class="py-16 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-white mb-8">Technical Toolkit</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Analysis -->
+                <div>
+                    <h4 class="text-slate-500 font-mono text-sm mb-4 uppercase tracking-wider">Analysis & FEA</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">ETABS</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">SAP2000</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">STAAD.Pro</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">MATLAB</span>
+                    </div>
+                </div>
+                <!-- BIM & Drafting -->
+                <div>
+                    <h4 class="text-slate-500 font-mono text-sm mb-4 uppercase tracking-wider">BIM & Drafting</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">Tekla Structures</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">Revit</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">Rhino / Grasshopper</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">AutoCAD</span>
+                    </div>
+                </div>
+                <!-- Programming -->
+                <div>
+                    <h4 class="text-slate-500 font-mono text-sm mb-4 uppercase tracking-wider">Programming</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">Python</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">MATLAB Scripting</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">Git / GitHub</span>
+                    </div>
+                </div>
+                <!-- Codes -->
+                <div>
+                    <h4 class="text-slate-500 font-mono text-sm mb-4 uppercase tracking-wider">Codes & Standards</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">AISC 360</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">ACI 318</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">ASCE 7</span>
+                        <span class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-sm">IBC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION TIMELINE -->
+    <section id="experience" class="bg-slate-950 py-20 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12">Experience & Education</h2>
+
+            <!-- Experience Card (Parent-Child Structure) -->
+            <div class="mb-12">
+                <div class="bg-slate-900 border border-slate-800 rounded-lg p-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Site & Civil Engineer Intern</h3>
+                            <p class="text-slate-400 font-medium">National Logistics Cell (NLC)</p>
+                        </div>
+                        <span class="text-slate-500 font-mono text-sm mt-1 md:mt-0">2024 - 2025</span>
+                    </div>
+                    
+                    <ul class="list-disc list-inside text-slate-300 space-y-2 mb-6 text-sm">
+                        <li>Supervised site rebar placement, concrete pours, and QA/QC for site superstructures in compliance with structural drawings.</li>
+                        <li>Managed field communication between engineering teams and site crews to resolve rapid structural inquiries.</li>
+                    </ul>
+
+                    <!-- Expandable Drawer Trigger -->
+                    <button onclick="toggleElement('nlc-initiatives')" class="text-blue-400 hover:text-blue-300 font-mono text-sm flex items-center transition-colors">
+                        [+] View Key Engineering Initiatives & Deliverables
+                    </button>
+
+                    <!-- Expandable Drawer Content -->
+                    <div id="nlc-initiatives" class="hidden mt-6 pt-6 border-t border-slate-800 space-y-6">
+                        
+                        <!-- Initiative 1 -->
+                        <div>
+                            <h4 class="text-white font-bold text-sm mb-2 flex items-center">
+                                <span class="bg-slate-800 text-slate-300 p-1 rounded mr-2 text-xs">🛠️ Redesign</span> Box Culvert Structural Adaptation
+                            </h4>
+                            <p class="text-slate-400 text-sm ml-8 leading-relaxed">
+                                Identified structural limitations in the original drawings based on field topography. Re-engineered the box culvert section to accommodate revised load demands and unexpected drainage requirements on site.
+                            </p>
+                        </div>
+
+                        <!-- Initiative 2 -->
+                        <div>
+                            <h4 class="text-white font-bold text-sm mb-2 flex items-center">
+                                <span class="bg-slate-800 text-slate-300 p-1 rounded mr-2 text-xs">📱 Utility</span> Field Inventory Management Android App
+                            </h4>
+                            <p class="text-slate-400 text-sm ml-8 leading-relaxed">
+                                Developed a custom Android application deployed on-site to digitize material tracking, significantly reducing manual logging errors and expediting daily site reporting logistics.
+                            </p>
+                        </div>
+
+                        <!-- Field Photos Lightbox Trigger -->
+                        <div class="ml-8 mt-4">
+                            <h5 class="text-slate-500 text-xs font-mono uppercase mb-2">Field Gallery (Click to enlarge)</h5>
+                            <div class="flex space-x-4">
+                                <div class="w-24 h-24 bg-slate-800 rounded border border-slate-700 flex items-center justify-center cursor-pointer hover:border-slate-500 transition" onclick="openImageModal('path/to/culvert.jpg', 'Box Culvert Redesign Execution')">
+                                    <span class="text-[10px] text-slate-500">Image 1</span>
+                                </div>
+                                <div class="w-24 h-24 bg-slate-800 rounded border border-slate-700 flex items-center justify-center cursor-pointer hover:border-slate-500 transition" onclick="openImageModal('path/to/rebar.jpg', 'Rebar QA/QC Verification')">
+                                    <span class="text-[10px] text-slate-500">Image 2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Card -->
+            <div>
+                <div class="bg-slate-900 border border-slate-800 rounded-lg p-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Master of Science in Civil Engineering</h3>
+                            <p class="text-slate-400 font-medium">University of Illinois Urbana-Champaign (UIUC)</p>
+                            <p class="text-sm text-slate-500 mt-1">Specialization: Structural Engineering</p>
+                        </div>
+                        <span class="text-slate-500 font-mono text-sm mt-1 md:mt-0">2026</span>
+                    </div>
+
+                    <button onclick="toggleElement('coursework')" class="text-blue-400 hover:text-blue-300 font-mono text-sm flex items-center transition-colors">
+                        [+] Showcase Key Coursework
+                    </button>
+
+                    <div id="coursework" class="hidden mt-4 bg-slate-950 p-4 rounded border border-slate-800">
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-slate-300 font-mono">
+                            <li>• Structural Dynamics</li>
+                            <li>• Finite Element Analysis</li>
+                            <li>• Advanced Steel Design</li>
+                            <li>• Stochastic Structural Mechanics</li>
+                            <li>• Decision & Risk Analysis</li>
+                            <li>• Applied Mathematics (Differential Geometry)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-12 text-center">
+        <h2 class="text-white font-bold text-xl mb-6">Let's Connect</h2>
+        <div class="flex justify-center space-x-6 mb-8">
+            <a href="mailto:your.email@example.com" class="text-slate-400 hover:text-white transition-colors">Email</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-slate-400 hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank" class="text-slate-400 hover:text-white transition-colors">GitHub</a>
+            <a href="resume.pdf" target="_blank" class="text-slate-400 hover:text-white transition-colors">Resume PDF</a>
+        </div>
+        <p class="text-slate-600 text-sm font-mono">&copy; 2026 Muhammad Abdullah. Handcoded for structurally sound browsing.</p>
+    </footer>
+
+
+ <!-- ========================================== -->
+    <!-- MODAL OVERLAYS (Hidden by default)       -->
+    <!-- ========================================== -->
+
+    <!-- Modal 1: Thesis -->
+    <div id="modal-1" class="fixed inset-0 bg-slate-950/90 backdrop-blur-sm z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-slate-900 border border-slate-700 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto no-scrollbar relative shadow-2xl">
+            <!-- Close Button -->
+            <button onclick="closeModal('modal-1')" class="absolute top-4 right-4 text-slate-400 hover:text-white bg-slate-800 p-2 rounded-full z-10">
+                ✕
+            </button>
+            
+            <!-- Hero Image inside modal -->
+            <div class="aspect-video bg-slate-800 flex items-center justify-center">
+                <span class="text-slate-500 font-mono">[ MATLAB Plot / Outcrossing Graph ]</span>
+            </div>
+            
+            <div class="p-8">
+                <div class="text-sm font-mono text-blue-400 mb-2">M.S. Thesis / Structural Mechanics</div>
+                <h2 class="text-3xl font-bold text-white mb-6">Stochastic Topology Optimization & System Reliability</h2>
+                
+                <h3 class="text-lg font-bold text-slate-200 mb-2">The Challenge</h3>
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                    Evaluating structural vulnerability under random vibration events requires assessing the probability of system outcrossing rates. Standard topology optimization often assumes deterministic loading, missing critical probabilistic failure modes.
+                </p>
+
+                <h3 class="text-lg font-bold text-slate-200 mb-2">Analysis & Methodology</h3>
+                <ul class="list-disc list-inside text-slate-400 mb-6 space-y-2">
+                    <li>Developed custom MATLAB algorithms mapping finite element models under stochastic loading.</li>
+                    <li>Utilized Rice's formula and Lyapunov covariance updates to evaluate outcrossing rates across multivariate domains.</li>
+                    <li>Implemented 2D elastostatic elements and Newton-Raphson solvers to maintain structural accuracy during optimization loops.</li>
+                </ul>
+                
+                <div class="mt-8 border-t border-slate-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0 text-sm font-mono text-slate-500">
+                        Tools: MATLAB | Newton-Raphson | Reliability Theory
+                    </div>
+                    <a href="thesis.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded text-sm font-semibold transition-colors">
+                        Download Summary (PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Lifecycle -->
+    <div id="modal-2" class="fixed inset-0 bg-slate-950/90 backdrop-blur-sm z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-slate-900 border border-slate-700 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto no-scrollbar relative shadow-2xl">
+            <button onclick="closeModal('modal-2')" class="absolute top-4 right-4 text-slate-400 hover:text-white bg-slate-800 p-2 rounded-full z-10">✕</button>
+            <div class="aspect-video bg-slate-800 flex items-center justify-center">
+                <span class="text-slate-500 font-mono">[ Risk Decision Matrix / Lifecycle Curve ]</span>
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-bold text-white mb-6">Reliability-Based Lifecycle Decision Analysis</h2>
+                <!-- Replace with your specific bullet points for project 2 -->
+                <p class="text-slate-400 mb-6">Details regarding the structural risk and lifecycle decisions go here...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Python Frame -->
+    <div id="modal-3" class="fixed inset-0 bg-slate-950/90 backdrop-blur-sm z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-slate-900 border border-slate-700 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto no-scrollbar relative shadow-2xl">
+            <button onclick="closeModal('modal-3')" class="absolute top-4 right-4 text-slate-400 hover:text-white bg-slate-800 p-2 rounded-full z-10">✕</button>
+            <div class="aspect-video bg-slate-800 flex items-center justify-center">
+                <span class="text-slate-500 font-mono">[ Python Code Snippet / 2D Frame Output ]</span>
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-bold text-white mb-6">Computational Python Frame Builder</h2>
+                <!-- Replace with your specific bullet points for project 3 -->
+                <p class="text-slate-400 mb-6">Built a direct stiffness method 2D solver from scratch using Python...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: BIM/Parametric -->
+    <div id="modal-4" class="fixed inset-0 bg-slate-950/90 backdrop-blur-sm z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-slate-900 border border-slate-700 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto no-scrollbar relative shadow-2xl">
+            <button onclick="closeModal('modal-4')" class="absolute top-4 right-4 text-slate-400 hover:text-white bg-slate-800 p-2 rounded-full z-10">✕</button>
+            <div class="aspect-video bg-slate-800 flex items-center justify-center">
+                <span class="text-slate-500 font-mono">[ Grasshopper Definition / Tekla Detailing ]</span>
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-bold text-white mb-6">Parametric Engineering & BIM Workflows</h2>
+                <!-- Replace with your specific bullet points for project 4 -->
+                <p class="text-slate-400 mb-6">Connected parametric design geometries to real-world structural steel detailing...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Universal Image Lightbox (For NLC Photos) -->
+    <div id="image-lightbox" class="fixed inset-0 bg-black/95 z-[60] hidden flex-col justify-center items-center p-4" onclick="closeImageModal()">
+        <img id="lightbox-img" src="" alt="Enlarged View" class="max-w-full max-h-[80vh] rounded shadow-2xl border border-slate-700 mb-4">
+        <p id="lightbox-caption" class="text-slate-300 font-mono text-sm"></p>
+        <span class="text-slate-500 mt-4 text-xs font-mono">Click anywhere to close</span>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT FOR INTERACTIVITY             -->
+    <!-- ========================================== -->
+    <script>
+        // Toggle Drawers & Coursework
+        function toggleElement(id) {
+            const el = document.getElementById(id);
+            if (el.classList.contains('hidden')) {
+                el.classList.remove('hidden');
+            } else {
+                el.classList.add('hidden');
+            }
+        }
+
+        // Open Project Modals
+        function openModal(id) {
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Close Project Modals
+        function closeModal(id) {
+            document.body.style.overflow = 'auto'; // Restore background scrolling
+            document.getElementById(id).classList.add('hidden');
+        }
+
+        // Open Image Lightbox
+        function openImageModal(imageSrc, captionText) {
+            // Stop event propagation if clicked inside a drawer so it doesn't close the drawer
+            event.stopPropagation();
+            
+            const lightbox = document.getElementById('image-lightbox');
+            const imgElement = document.getElementById('lightbox-img');
+            const captionElement = document.getElementById('lightbox-caption');
+            
+            // Note: Replace with real image sources when you upload them to GitHub
+            // imgElement.src = imageSrc; 
+            captionElement.innerText = captionText;
+            
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close Image Lightbox
+        function closeImageModal() {
+            const lightbox = document.getElementById('image-lightbox');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close Modals on pressing ESC key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                document.querySelectorAll('[id^="modal-"]').forEach(el => el.classList.add('hidden'));
+                closeImageModal();
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
