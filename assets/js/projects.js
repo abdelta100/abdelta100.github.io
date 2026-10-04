@@ -13,7 +13,7 @@ window.PROJECTS = [
   {
     id: "viscous-damper-placement", featured: true,
     title: "Optimizing viscous damper placement for an irregular tower",
-    type: "Academic project", categories: ["academic", "computational-design"], year: "2024–2026",
+    type: "Academic project", categories: ["academic", "computational-design"], year: "Spring 2026",
     summary: "A MATLAB workflow for exploring damper layouts in an asymmetric L-shaped tower under lateral drift and rotation objectives.",
     details: "Developed a framework to optimize rotational performance of an asymmetric building under stochastic excitation, using damping coefficients as design variables. Compared individual, grouped, and floor-grouped damper configurations to explore performance and practical tradeoffs. Structural matrices were extracted from SAP2000, processed in MATLAB, and reduced with rigid-floor constraints before gradient-based optimization.",
     contribution: "Term project · Structural damping · SAP2000 and MATLAB",
@@ -23,7 +23,7 @@ window.PROJECTS = [
   {
     id: "lifecycle-cost-reliability", featured: true,
     title: "Life-cycle cost assessment in a reliability framework",
-    type: "Academic project", categories: ["academic"], year: "2024–2026",
+    type: "Academic project", categories: ["academic"], year: "Fall 2025",
     summary: "Comparing pavement alternatives by treating life-cycle costs as uncertain and validating decisions with Monte Carlo analysis.",
     details: "Applied structural reliability methods (FORM and SORM) to compare design alternatives for a pavement project when costs are treated as random variables. Validated the results with Monte Carlo analysis and plotted how the preferred choice responds to cost variables and model parameters.",
     contribution: "Term project · Reliability analysis · MATLAB",
