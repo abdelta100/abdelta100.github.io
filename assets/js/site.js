@@ -1,7 +1,7 @@
 (() => {
   const projects = window.PROJECTS || [];
   const escapeHTML = (value = "") => String(value).replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
-  const categoryNames = { research: "Research", academic: "Academic project", "computational-design": "Computational design" };
+  const categoryNames = { research: "Research", academic: "Academic project", professional: "Professional", "computational-design": "Computational design" };
 
   function visualMarkup(project) {
     if (project.cover) {
