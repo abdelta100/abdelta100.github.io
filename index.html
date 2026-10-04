@@ -1,36 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Under Construction</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101311">
+  <meta name="description" content="Muhammad Abdullah is a structural engineer working across computational mechanics, reliability, and civil engineering.">
+  <title>Muhammad Abdullah — Structural Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/projects.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
 </head>
-<body class="bg-slate-900 text-slate-200 h-screen flex flex-col items-center justify-center p-6 text-center font-sans">
-    
-    <div class="max-w-md w-full">
-        <!-- Construction Icon -->
-        <svg class="w-20 h-20 mx-auto text-yellow-500 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="wordmark" href="index.html" aria-label="Muhammad Abdullah, home"><span class="wordmark-mark">MA</span><span>Muhammad Abdullah</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a class="active" href="index.html" aria-current="page">Home</a>
+        <a href="work.html">Work <span class="nav-count" data-nav-project-count></span></a>
+        <a href="#experience">Experience</a>
+        <a class="nav-resume" href="Resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Structural engineer · Computational mechanics</p>
+        <h1>Making complex<br>structures <em>make sense.</em></h1>
+        <p class="hero-intro">I work at the intersection of structural engineering, reliability, and computation—from research code to the realities of construction.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="work.html">Explore selected work <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#experience">A little about me <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Abstract structural engineering drawing" role="img">
+        <div class="art-label art-label-top">STRUCTURAL SYSTEMS / 01</div>
+        <svg viewBox="0 0 520 430" aria-hidden="true" class="structure-drawing">
+          <defs><linearGradient id="beam" x1="0" x2="1"><stop stop-color="#a9b59e"/><stop offset="1" stop-color="#d9a36f"/></linearGradient></defs>
+          <g fill="none" stroke="#303a33" stroke-width="1"><path d="M30 350H490M30 278H490M30 206H490M30 134H490M30 62H490"/><path d="M70 30V390M160 30V390M250 30V390M340 30V390M430 30V390"/></g>
+          <g fill="none" stroke="url(#beam)" stroke-width="3"><path d="M70 350V134L250 62L430 134V350M70 278L160 206L250 278L340 206L430 278M70 206L160 134L250 206L340 134L430 206M70 134L160 206L250 134L340 206L430 134"/><path d="M70 134H430M70 206H430M70 278H430M70 350H430" opacity=".7"/></g>
+          <g fill="#d9a36f"><circle cx="70" cy="134" r="5"/><circle cx="250" cy="62" r="5"/><circle cx="430" cy="134" r="5"/><circle cx="250" cy="206" r="4"/><circle cx="160" cy="278" r="4"/><circle cx="340" cy="278" r="4"/></g>
+          <path d="M70 365H430" stroke="#d9a36f" stroke-dasharray="3 6" opacity=".6"/>
         </svg>
+        <div class="art-caption"><span>MODEL / FRAME 03</span><span>UIUC · 2026</span></div>
+      </div>
+      <div class="hero-meta"><span>Structural engineering · Computation · Design</span><span>MS Civil Engineering · UIUC · 2026</span></div>
+    </section>
 
-        <h1 class="text-4xl font-bold text-white mb-4">Under Construction</h1>
-        <p class="text-lg text-slate-400 mb-8">Designing the framework and ensuring everything is up to code. Be back shortly.</p>
+    <section class="section shell" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">A few things I’ve worked on</p><h2 id="featured-title">Selected work<span class="heading-period">.</span></h2></div>
+        <a class="text-link desktop-only" href="work.html">View all work <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="project-grid featured-grid" data-project-list="featured" aria-live="polite"></div>
+      <a class="button button-outline mobile-all-work" href="work.html">Browse the full archive <span aria-hidden="true">↗</span></a>
+    </section>
 
-        <!-- Download Links -->
-        <div class="space-y-4">
-            <a href="Resume.pdf" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition duration-200 shadow-lg">
-                View Resume (PDF)
-            </a>
-            <a href="Project_Portfolio.pdf" target="_blank" class="block w-full bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-4 rounded-lg transition duration-200 shadow-lg">
-                View Full Portfolio (PDF)
-            </a>
+    <section class="about-band" id="experience">
+      <div class="shell about-layout">
+        <div class="about-lead"><p class="eyebrow">Practice meets research</p><h2>Curious about how things work—and how to make them work <em>better.</em></h2>
+          <p>My experience spans a structural engineering graduate research lab and infrastructure construction in Pakistan. I enjoy turning engineering questions into clear models, useful tools, and decisions people can act on.</p>
+          <a class="text-link" href="mailto:abdullah8t90@gmail.com">abdullah8t90@gmail.com <span aria-hidden="true">↗</span></a>
         </div>
-        
-        <div class="mt-12 text-sm text-slate-500">
-            <p>Muhammad Abdullah</p>
+        <div class="experience-list">
+          <article class="experience-item"><div class="experience-date">2025 — 2026</div><div><h3>Graduate Researcher</h3><p class="experience-org">Smart Structures Technology Lab · UIUC</p><p>Integrated reliability constraints into stochastic topology optimization; implemented and validated adjoint sensitivities, and refactored MATLAB scripts into a modular framework.</p></div></article>
+          <article class="experience-item"><div class="experience-date">2022 — 2023</div><div><h3>Management Trainee Engineer</h3><p class="experience-org">National Logistics Cell · Pakistan</p><p>Coordinated bridge, road, and building work across project teams. Proposed an accepted culvert redesign and built an AppSheet rebar inventory tool linked to Google Sheets.</p><details class="more-details"><summary>More about this role</summary><p>Work included subcontractor coordination, site inspections, bar bending schedules, procurement, daily reporting, and progress tracking in Primavera.</p></details></div></article>
+          <article class="experience-item"><div class="experience-date">2021 — 2022</div><div><h3>Engineering Intern</h3><p class="experience-org">Designmen Consulting · Islamabad</p><p>Built familiarity with high-rise residential drawings and assisted with site-work inspection.</p></div></article>
+          <article class="experience-item education-item"><div class="experience-date">Education</div><div><h3>MS Civil Engineering, Structural</h3><p class="experience-org">University of Illinois Urbana-Champaign · 2024–2026 · GPA 3.93</p><p class="education-secondary">BE Civil Engineering · Military College of Engineering, NUST · 2017–2021 · GPA 3.82</p></div></article>
         </div>
-    </div>
+      </div>
+    </section>
 
+    <section class="toolkit shell" aria-labelledby="toolkit-title">
+      <div class="toolkit-title"><p class="eyebrow">Tools I reach for</p><h2 id="toolkit-title">Technical toolkit<span class="heading-period">.</span></h2></div>
+      <div class="toolkit-groups">
+        <div><h3>Analysis & design</h3><p>ETABS · SAP2000 · STAAD.Pro · Tekla Structures · Revit · AutoCAD</p></div>
+        <div><h3>Computation & modeling</h3><p>MATLAB · Python · Grasshopper · Excel</p></div>
+        <div><h3>Infrastructure</h3><p>Primavera · QGIS · HEC-RAS</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><a class="wordmark" href="index.html"><span class="wordmark-mark">MA</span><span>Muhammad Abdullah</span></a><p>Structural engineering, with a little more curiosity.</p><div class="footer-links"><a href="mailto:abdullah8t90@gmail.com">Email</a><a href="Resume.pdf" target="_blank" rel="noopener">Resume PDF ↗</a></div><small>© <span data-year></span> Muhammad Abdullah</small></div></footer>
+
+  <dialog class="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Close project details">×</button><div class="dialog-body"></div></dialog>
 </body>
 </html>

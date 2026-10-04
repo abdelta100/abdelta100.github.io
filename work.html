@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101311">
+  <meta name="description" content="Research, academic, and personal projects by Muhammad Abdullah in structural engineering and computational design.">
+  <title>Selected Work — Muhammad Abdullah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/projects.js" defer></script><script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav shell" aria-label="Main navigation">
+    <a class="wordmark" href="index.html" aria-label="Muhammad Abdullah, home"><span class="wordmark-mark">MA</span><span>Muhammad Abdullah</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+    <div class="nav-links" id="nav-links"><a href="index.html">Home</a><a class="active" href="work.html" aria-current="page">Work <span class="nav-count" data-nav-project-count></span></a><a href="index.html#experience">Experience</a><a class="nav-resume" href="Resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a></div>
+  </nav></header>
+  <main id="main" class="work-main shell">
+    <header class="work-heading"><p class="eyebrow">Research · Academic · Personal</p><h1>Work, in progress<span class="heading-period">.</span></h1><p>A selection of engineering questions I’ve explored, tools I’ve built, and ideas I’ve tested. Choose a lens to browse.</p></header>
+    <div class="filter-bar" role="group" aria-label="Filter projects by category" data-filter-bar>
+      <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">All work <span data-filter-count="all"></span></button>
+      <button class="filter-chip" type="button" data-filter="research" aria-pressed="false">Research</button>
+      <button class="filter-chip" type="button" data-filter="academic" aria-pressed="false">Academic projects</button>
+      <button class="filter-chip" type="button" data-filter="computational-design" aria-pressed="false">Computational design</button>
+    </div>
+    <p class="results-note" data-results-note aria-live="polite"></p>
+    <div class="project-grid archive-grid" data-project-list="all"></div>
+    <aside class="archive-note"><span class="note-mark">↗</span><p>More field work is part of my <a href="index.html#experience">professional experience</a>. I’ll add individual case studies here as they’re ready to share.</p></aside>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="wordmark" href="index.html"><span class="wordmark-mark">MA</span><span>Muhammad Abdullah</span></a><p>Structural engineering, with a little more curiosity.</p><div class="footer-links"><a href="mailto:abdullah8t90@gmail.com">Email</a><a href="Resume.pdf" target="_blank" rel="noopener">Resume PDF ↗</a></div><small>© <span data-year></span> Muhammad Abdullah</small></div></footer>
+  <dialog class="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Close project details">×</button><div class="dialog-body"></div></dialog>
+</body>
+</html>
